@@ -1,0 +1,38 @@
+
+*,
+*::before,
+*::after {
+  margin: 1  auto;
+  padding: 1;
+  box-sizing: border-box;
+}
+:root {
+  --font-color: #000;
+  --link-color: #1c75b9;
+  --bg-color: #c1bfbd;
+}
+[data-theme='dark'] {
+  --font-color: #c1bfbd;
+  --link-color: #0a86da;
+  --bg-color: #262626;
+}
+.link {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+h1, p {
+  font-family: Lato;
+}
+
+.right-aligned-button {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+
+}
